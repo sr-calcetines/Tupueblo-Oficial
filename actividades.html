@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividades Pueblo</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="static/JS/crudActividades.js"></script>
+  <link rel="stylesheet" href="static/CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="static/IMG/logo.png" alt="Logo Tupueblo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+          <li><a href="puebloMes.html">Pueblo del mes</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="super">
+    <div class="actividades-container">
+      <h1 style="background-color: #2b782e; border-radius: 10px;">Actividades del Pueblo</h1>
+      <div id="actividades"></div>
+
+      <h2>Añadir Nueva Actividad</h2>
+      <form id="addActividadForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea><br>
+        <label for="imagen">URL de la Imagen:</label>
+        <input type="text" id="imagen" name="imagen" required><br>
+        <button type="submit">Añadir Actividad</button>
+      </form>
+
+      <h2>Editar Actividad</h2>
+      <div id="editFormContainer" style="display: none;">
+        <form id="editActividadForm">
+          <input type="hidden" id="edit-id">
+          <label for="edit-nombre">Nombre:</label>
+          <input type="text" id="edit-nombre" name="edit-nombre" required><br>
+          <label for="edit-descripcion">Descripción:</label>
+          <textarea id="edit-descripcion" name="edit-descripcion" required></textarea><br>
+          <label for="edit-imagen">URL de la Imagen:</label>
+          <input type="text" id="edit-imagen" name="edit-imagen" required><br>
+          <button type="submit">Actualizar Actividad</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

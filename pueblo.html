@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/CSS/style.css">
+    <title>Pueblo - Tupueblo</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="static/IMG/logo.png" alt="Logo Tupueblo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="puebloMes.html">Pueblo del mes</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="super">
+        <div class="container">
+            <section id="detalles">
+                <h2 id="pueblo-nombre"></h2>
+                <div class="slider">
+                    <ul id="pueblo-imagenes">
+                        <!-- Las imágenes del pueblo se cargarán aquí -->
+                    </ul>
+                </div>
+                <div class="textoPueblo">
+                    <p id="pueblo-descripcion"></p>
+                </div>
+            </section>
+
+            <section id="actividades">
+                <h3>¿Qué hacer en <span id="pueblo-nombre-actividades"></span>?</h3>
+                <ul id="pueblo-actividades">
+                    <!-- Las actividades del pueblo se cargarán aquí -->
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/JS/pueblo.js"></script>
+</body>
+
+</html>
